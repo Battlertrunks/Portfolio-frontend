@@ -1,12 +1,32 @@
+import { Link } from "react-router-dom";
 import "./DropDown.css";
 
-const DropDown = () => {
+interface Props {
+  onDropDown: () => void;
+}
+
+const DropDown = ({ onDropDown }: Props) => {
   return (
-    <ul className="DropDown">
-      <li>About</li>
-      <li>Contact</li>
-      <li>Portfolio</li>
-    </ul>
+    <aside className="DropDown">
+      <button onClick={() => onDropDown()}>close</button>
+      <ul>
+        <li>
+          <Link className="link" to={"/"}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to={"/contact"}>
+            Contact
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="/portfolio">
+            Portfolio
+          </Link>
+        </li>
+      </ul>
+    </aside>
   );
 };
 

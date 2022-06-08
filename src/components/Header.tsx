@@ -14,6 +14,8 @@ const Header = () => {
 
   const dropDown: string = !openDropDown ? "drop-not-visible" : "";
 
+  const closeDropDown = () => setOpenDropDown(false);
+
   return (
     <nav className="Header">
       <ScrollContainer>
@@ -31,7 +33,7 @@ const Header = () => {
             </ul>
             <div className="drop-down-menu">
               <div className={`drop-down ${dropDown}`}>
-                <DropDown />
+                <DropDown onDropDown={closeDropDown} />
               </div>
             </div>
           </Animator>

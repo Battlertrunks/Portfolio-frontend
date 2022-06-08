@@ -1,13 +1,13 @@
 .Header {
   position: fixed;
-  left: 0.35em;
-  right: 0.35em;
+  width: 100%;
   z-index: 1;
 }
 
 .Header .items-container {
   display: flex;
   justify-content: space-between;
+  padding: 0 2em;
   padding-top: 0.5em;
 }
 
@@ -17,7 +17,7 @@
 
 .Header .drop-down {
   opacity: 1;
-  transform: translateY(100%);
+  transform: translateY(-25%);
   transition: all 1s ease;
 }
 
