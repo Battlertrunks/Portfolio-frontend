@@ -1,0 +1,19 @@
+.AboutMe {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+  margin-bottom: 0;
+}
+
+.AboutMe .phone-img {
+  width: 10em;
+}
+
+.AboutMe p {
+  letter-spacing: 0.2rem;
+  line-height: 1.75em;
+  font-size: 0.9rem;
+  margin: 0 2.25em;
+}

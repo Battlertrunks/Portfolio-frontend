@@ -1,0 +1,61 @@
+.HomeRoute {
+  background-color: #fb8f67;
+  height: 100%;
+}
+
+.HomeRoute .opening-and-animation-container {
+  background-color: #156064;
+  height: 100vh;
+}
+
+.HomeRoute .opening-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeRoute .opening-container h2 {
+  margin-bottom: 12em;
+}
+
+.HomeRoute .opening-container h4 {
+  font-size: 0.65em;
+  margin-bottom: 1em;
+}
+
+.HomeRoute .opening-container p {
+  position: absolute;
+  font-size: 7.5rem;
+  transform: translateX(-50%);
+  color: #17757a;
+}
+
+.HomeRoute .background-word {
+  font-family: "Leckerli One", cursive;
+}
+
+.HomeRoute img {
+  width: 5em;
+}
+
+.HomeRoute .skills-container {
+  height: 100vh;
+}
+
+.HomeRoute .skills-heading {
+  text-align: center;
+}
+
+.HomeRoute .software-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.HomeRoute .software-icons li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}

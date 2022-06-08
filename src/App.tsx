@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ScrollContainer } from "react-scroll-motion";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -12,8 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeRoute />} />
         </Routes>
-        <Footer />
       </Router>
+      <Footer />
     </main>
   );
 }

@@ -1,3 +1,4 @@
+import { ScrollPage } from "react-scroll-motion";
 import "./Footer.css";
 
 const Footer = () => {
