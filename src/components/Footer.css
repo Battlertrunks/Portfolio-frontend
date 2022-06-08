@@ -1,0 +1,31 @@
+.Footer {
+  background-color: #156064;
+  box-shadow: 0 0 25px -7px #000;
+}
+
+.Footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em 0;
+}
+
+.Footer li {
+  margin: 0 1.5em;
+  font-size: 1.05rem;
+}
+
+.Footer .breaker {
+  margin: 0;
+}
+
+.Footer li div {
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
+}
+
+.Footer p {
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.65rem;
+}

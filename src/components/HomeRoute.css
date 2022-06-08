@@ -1,6 +1,7 @@
 .HomeRoute {
   background-color: #fb8f67;
   height: 100%;
+  padding-bottom: 8em;
 }
 
 .HomeRoute .opening-and-animation-container {
@@ -14,6 +15,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.HomeRoute .circle-1 {
+  width: 65vh;
+  height: 65vh;
+  border-radius: 50%;
+  bottom: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #13696d;
+  position: absolute;
+}
+
+.HomeRoute .circle-2 {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  top: 45%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  background-color: #13696d;
+  position: absolute;
 }
 
 .HomeRoute .opening-container h2 {

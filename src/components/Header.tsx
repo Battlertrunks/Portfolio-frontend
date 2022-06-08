@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Animator,
   batch,
@@ -9,6 +10,10 @@ import DropDown from "./DropDown";
 import "./Header.css";
 
 const Header = () => {
+  const [openDropDown, setOpenDropDown] = useState<boolean>(false);
+
+  const dropDown: string = !openDropDown ? "drop-not-visible" : "";
+
   return (
     <nav className="Header">
       <ScrollContainer>
@@ -19,11 +24,15 @@ const Header = () => {
                 <h1>G/S</h1>
               </li>
               <li>
-                <button>Sidebar</button>
+                <button onClick={() => setOpenDropDown((prev) => !prev)}>
+                  Sidebar
+                </button>
               </li>
             </ul>
             <div className="drop-down-menu">
-              <DropDown />
+              <div className={`drop-down ${dropDown}`}>
+                <DropDown />
+              </div>
             </div>
           </Animator>
         </ScrollPage>

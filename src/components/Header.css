@@ -15,6 +15,13 @@
   font-weight: 200;
 }
 
-.Header .drop-down-menu {
-  display: none;
+.Header .drop-down {
+  opacity: 1;
+  transform: translateY(100%);
+  transition: all 1s ease;
+}
+
+.Header .drop-not-visible {
+  opacity: 0;
+  transform: translateY(-150%);
 }

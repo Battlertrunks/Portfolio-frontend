@@ -1,4 +1,3 @@
-import { ScrollPage } from "react-scroll-motion";
 import "./Footer.css";
 
 const Footer = () => {
@@ -6,7 +5,13 @@ const Footer = () => {
     <footer className="Footer">
       <ul>
         <li>About</li>
+        <li className="breaker">
+          <div></div>
+        </li>
         <li>Contact</li>
+        <li className="breaker">
+          <div></div>
+        </li>
         <li>Portfolio</li>
       </ul>
       <p>Copyright Gavin Szczesniak</p>
