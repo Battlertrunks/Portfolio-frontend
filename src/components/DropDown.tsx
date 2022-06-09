@@ -11,17 +11,17 @@ const DropDown = ({ onDropDown }: Props) => {
       <button onClick={() => onDropDown()}>close</button>
       <ul>
         <li>
-          <Link className="link" to={"/"}>
+          <Link className="link" to={"/"} onClick={() => onDropDown()}>
             About
           </Link>
         </li>
         <li>
-          <Link className="link" to={"/contact"}>
+          <Link className="link" to={"/contact"} onClick={() => onDropDown()}>
             Contact
           </Link>
         </li>
         <li>
-          <Link className="link" to="/portfolio">
+          <Link className="link" to="/portfolio" onClick={() => onDropDown()}>
             Portfolio
           </Link>
         </li>

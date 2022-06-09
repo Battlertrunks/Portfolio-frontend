@@ -29,3 +29,8 @@
   padding: 1em 0;
   font-size: 0.65rem;
 }
+
+.Footer .link {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+}

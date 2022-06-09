@@ -48,7 +48,7 @@ const HomeRoute = () => {
         <AboutMe />
         <div className="skills-container">
           <h3 data-aos="fade-up" className="skills-heading">
-            Skills and Tools.
+            Tools and Languages I Work With.
           </h3>
           <ul className="software-icons">
             <li data-aos="fade-up">
@@ -106,25 +106,51 @@ const HomeRoute = () => {
                 alt="CSS icon."
               />
             </li>
-
+            <li data-aos="fade-up">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/bootstrap-icon.png?alt=media&token=39f62156-79f3-48d8-b651-f0a24b12086d"
+                alt="Bootstrap icon."
+              />
+            </li>
             <li data-aos="fade-up">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/gitIcon.png?alt=media&token=24583ff7-f7ea-49a1-a662-aa06e73775ba"
                 alt="git icon."
               />
             </li>
-
+            <li data-aos="fade-up">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/Photoshop-icon.png?alt=media&token=1b7f7732-5101-4def-8a11-fbb2d7a1ee65"
+                alt="Photoshop icon."
+              />
+            </li>
+            <li data-aos="fade-up">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/adobe-icon.png?alt=media&token=0d93f3fc-d108-42ba-ae0a-55c6db58435c"
+                alt="Adobe Suit icon."
+              />
+            </li>
+            <li data-aos="fade-up">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/Figma_icon.png?alt=media&token=593b0a85-da74-48b4-9639-c5cd8b304de0"
+                alt="Figma icon."
+              />
+            </li>
+          </ul>
+          <h3 data-aos="fade-up" className="skills-learning-heading">
+            Tools I am currently learning.
+          </h3>
+          <ul className="software-icons learning-icons">
             <li data-aos="fade-up">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/cSharp-icon.png?alt=media&token=b570ecef-81fc-4f15-b9a0-9cc688ffadc4"
                 alt="C Sharp icon."
               />
             </li>
-
             <li data-aos="fade-up">
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/adobe-icon.png?alt=media&token=0d93f3fc-d108-42ba-ae0a-55c6db58435c"
-                alt="Adobe Suit icon."
+                src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/aspnet-icon.png?alt=media&token=7471f13f-fd2b-4c30-86cc-ae7764083235"
+                alt="asp .net icon."
               />
             </li>
           </ul>

@@ -64,11 +64,16 @@
 }
 
 .HomeRoute .skills-container {
-  height: 100vh;
+  height: 200vh;
 }
 
-.HomeRoute .skills-heading {
+.HomeRoute .skills-heading,
+.HomeRoute .skills-learning-heading {
   text-align: center;
+}
+
+.HomeRoute .skills-learning-heading {
+  margin-top: 5em;
 }
 
 .HomeRoute .software-icons {
@@ -81,4 +86,8 @@
   justify-content: center;
   align-items: center;
   margin: 1em 0;
+}
+
+.HomeRoute .learning-icons {
+  margin-bottom: 15em;
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Animator,
   batch,
@@ -11,6 +11,15 @@ import "./Header.css";
 
 const Header = () => {
   const [openDropDown, setOpenDropDown] = useState<boolean>(false);
+  const [scrollDetection, setScrollDetection] = useState(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => closeDropDown());
+
+    return () => {
+      window.removeEventListener("scroll", (e) => closeDropDown());
+    };
+  }, [scrollDetection]);
 
   const dropDown: string = !openDropDown ? "drop-not-visible" : "";
 
