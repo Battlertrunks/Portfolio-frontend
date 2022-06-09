@@ -21,6 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #eee;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 h1,

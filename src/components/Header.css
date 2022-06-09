@@ -15,6 +15,15 @@
   font-weight: 200;
 }
 
+.Header .dropdown-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.Header .hamburger-icon {
+  width: 25px;
+}
+
 .Header .drop-down {
   opacity: 1;
   transform: translateY(-25%);

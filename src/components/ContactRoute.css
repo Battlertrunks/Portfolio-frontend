@@ -1,0 +1,8 @@
+.ContactRoute section {
+  height: 100vh;
+  background-color: #156064;
+}
+
+.ContactRoute .even {
+  background-color: #fb8f67;
+}

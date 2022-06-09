@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { ScrollContainer } from "react-scroll-motion";
 import "./App.css";
+import ContactRoute from "./components/ContactRoute";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomeRoute from "./components/HomeRoute";
+import PageNotFoundRoute from "./components/PageNotFoundRoute";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomeRoute />} />
+          <Route path="/contact" element={<ContactRoute />} />
+          <Route path="*" element={<PageNotFoundRoute />} />
         </Routes>
         <Footer />
       </Router>
