@@ -1,0 +1,35 @@
+.MainPortfolioRoute {
+  background-color: #156064;
+  padding-top: 3em;
+}
+
+.MainPortfolioRoute section {
+  height: 100%;
+  background-color: #156064;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2em;
+}
+
+.MainPortfolioRoute section * {
+  margin: 1.5em 0;
+}
+
+.MainPortfolioRoute section:nth-child(even) {
+  background-color: #fb8f67;
+}
+
+.MainPortfolioRoute h2 {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.MainPortfolioRoute img {
+  width: 20em;
+}
+
+.MainPortfolioRoute p {
+  line-height: 2.25em;
+}

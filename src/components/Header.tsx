@@ -1,28 +1,24 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import {
-  Animator,
-  batch,
-  MoveOut,
-  ScrollContainer,
-  ScrollPage,
-} from "react-scroll-motion";
 import DropDown from "./DropDown";
 import "./Header.css";
 
 const Header = () => {
   const [openDropDown, setOpenDropDown] = useState<boolean>(false);
-  const [scrollDetection, setScrollDetection] = useState(window.scrollY);
+  const scrollDetection: number = window.scrollY;
   const urlChange = useLocation();
 
   useEffect(() => {
     window.addEventListener("scroll", (e) => closeDropDown());
-    window.scrollTo({ top: 0, behavior: "smooth" });
 
     return () => {
       window.removeEventListener("scroll", (e) => closeDropDown());
     };
-  }, [scrollDetection, urlChange.pathname]);
+  }, [scrollDetection]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [urlChange.pathname]);
 
   const dropDown: string = !openDropDown ? "drop-not-visible" : "";
 

@@ -4,6 +4,7 @@ import ContactRoute from "./components/ContactRoute";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomeRoute from "./components/HomeRoute";
+import MainPortfolioRoute from "./components/MainPortfolioRoute";
 import PageNotFoundRoute from "./components/PageNotFoundRoute";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeRoute />} />
           <Route path="/contact" element={<ContactRoute />} />
+          <Route path="/portfolio" element={<MainPortfolioRoute />} />
           <Route path="*" element={<PageNotFoundRoute />} />
         </Routes>
         <Footer />
