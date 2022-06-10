@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DropDown from "./DropDown";
 import "./Header.css";
 
@@ -28,9 +28,25 @@ const Header = () => {
     <nav className="Header">
       <ul className="items-container">
         <li>
-          <h1>G/S</h1>
+          <Link to="/">
+            <h1>G/S</h1>
+          </Link>
         </li>
-        <li>
+        <li className="middle-options-container">
+          <Link className="link" to="/">
+            About
+          </Link>
+          <div className="divider" />
+          <Link className="link" to="/contact">
+            Contact
+          </Link>
+        </li>
+        <li className="portfolio-link-container">
+          <Link className="portfolio-link link" to="/portfolio">
+            Portfolio
+          </Link>
+        </li>
+        <li className="dropdown-container">
           <button
             className="dropdown-btn"
             onClick={() => setOpenDropDown((prev) => !prev)}

@@ -47,6 +47,7 @@ const HomeRoute = () => {
       <div>
         <AboutMe />
         <div className="skills-container">
+          <div className="circle-3"></div>
           <h3 data-aos="fade-up" className="skills-heading">
             Tools and Languages I Work With.
           </h3>

@@ -5,4 +5,5 @@ export default interface ProjectInfo {
   information: string;
   developers: string;
   tools: string;
+  projectLink: string;
 }

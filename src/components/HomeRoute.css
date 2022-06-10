@@ -2,15 +2,20 @@
   background-color: #fb8f67;
   height: 100%;
   padding-bottom: 8em;
+  overflow: hidden;
 }
 
 .HomeRoute .opening-and-animation-container {
   background-color: #156064;
   height: 100vh;
+  min-height: 650px;
+  z-index: 1;
+  position: relative;
 }
 
 .HomeRoute .opening-container {
   height: 100%;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,6 +44,17 @@
   position: absolute;
 }
 
+.HomeRoute .circle-3 {
+  height: 410vh;
+  width: 410vh;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #ff9d79;
+}
+
 .HomeRoute .opening-container h2 {
   margin-bottom: 12em;
 }
@@ -65,6 +81,7 @@
 
 .HomeRoute .skills-container {
   height: 200vh;
+  position: relative;
 }
 
 .HomeRoute .skills-heading,

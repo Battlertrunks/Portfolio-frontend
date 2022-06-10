@@ -1,6 +1,7 @@
 .MainPortfolioRoute {
   background-color: #156064;
   padding-top: 3em;
+  overflow: hidden;
 }
 
 .MainPortfolioRoute section {
@@ -26,8 +27,18 @@
   line-height: 1.5em;
 }
 
+.MainPortfolioRoute a {
+  color: #fff;
+  background-color: #00c49a;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  margin: 1em auto;
+  padding: 0.5em 1.5em;
+  border-radius: 3px;
+}
+
 .MainPortfolioRoute img {
-  width: 20em;
+  width: 17em;
 }
 
 .MainPortfolioRoute p {

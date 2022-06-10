@@ -3,6 +3,30 @@
   text-align: center;
   padding: 2em 0;
   margin-bottom: 0;
+  position: relative;
+}
+
+.AboutMe .word-background {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "leckerli one", cursive;
+  color: #ff9d79;
+  font-size: 7.5rem;
+  text-shadow: 0 0.1em 0.01em #e67b5494;
+}
+
+.AboutMe .circle {
+  height: 25em;
+  width: 25em;
+  bottom: 75%;
+  right: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  background-color: #ff9d79;
+  position: absolute;
+  border-radius: 50%;
 }
 
 .AboutMe .phone-img {

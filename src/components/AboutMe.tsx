@@ -10,6 +10,8 @@ const AboutMe = () => {
 
   return (
     <div className="AboutMe">
+      <div data-aos="fade-down" className="circle"></div>
+      <h4 className="word-background">Me.</h4>
       <h3 data-aos="fade-up">About Me.</h3>
       <img
         data-aos="fade-up"
