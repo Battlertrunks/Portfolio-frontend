@@ -30,34 +30,26 @@ const Header = () => {
 
   return (
     <nav className="Header">
-      <ScrollContainer>
-        <ScrollPage>
-          <Animator animation={batch(MoveOut(0, -100))}>
-            <ul className="items-container">
-              <li>
-                <h1>G/S</h1>
-              </li>
-              <li>
-                <button
-                  className="dropdown-btn"
-                  onClick={() => setOpenDropDown((prev) => !prev)}
-                >
-                  <img
-                    className="hamburger-icon"
-                    src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/hamburger-icon.png?alt=media&token=eac10e0d-2fc6-42bf-8f0f-2c4a71eb7709"
-                    alt="sidebar button."
-                  />
-                </button>
-              </li>
-            </ul>
-            <div className="drop-down-menu">
-              <div className={`drop-down ${dropDown}`}>
-                <DropDown onDropDown={closeDropDown} />
-              </div>
-            </div>
-          </Animator>
-        </ScrollPage>
-      </ScrollContainer>
+      <ul className="items-container">
+        <li>
+          <h1>G/S</h1>
+        </li>
+        <li>
+          <button
+            className="dropdown-btn"
+            onClick={() => setOpenDropDown((prev) => !prev)}
+          >
+            <img
+              className="hamburger-icon"
+              src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/hamburger-icon.png?alt=media&token=eac10e0d-2fc6-42bf-8f0f-2c4a71eb7709"
+              alt="sidebar button."
+            />
+          </button>
+        </li>
+      </ul>
+      <div className={`drop-down ${dropDown}`}>
+        <DropDown onDropDown={closeDropDown} />
+      </div>
     </nav>
   );
 };
