@@ -11,8 +11,8 @@
 .Header .items-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 2em;
-  padding-top: 0.5em;
+  padding: 0.75em 2em;
+  background-color: #156064;
 }
 
 .Header h1 {
@@ -46,10 +46,6 @@
 }
 
 @media only screen and (min-width: 865px) {
-  .Header {
-    top: 0.5em;
-  }
-
   .Header .dropdown-container,
   .Header .drop-down {
     display: none;

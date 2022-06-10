@@ -50,9 +50,94 @@
   width: 9em;
   padding: 0.75em 0;
   border: none;
-  background-color: #00c49a;
+  background-color: #156064;
   color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.ContactRoute .contact-container input,
+.ContactRoute .contact-container textarea {
+  font-family: "Lato", sans-serif;
+}
+
+@media only screen and (min-width: 865px) {
+  .ContactRoute .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5em;
+    padding: 2em;
+    background-color: #156064;
+    max-width: 55em;
+  }
+
+  .ContactRoute .opening-text {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-top: 5em;
+  }
+
+  .ContactRoute h2 {
+    margin-top: 1em;
+  }
+
+  .contact-container .mail-icon {
+    width: 15em;
+    margin: 0 auto;
+  }
+
+  .ContactRoute form {
+    background-color: #fff;
+    padding: 2em;
+    width: 50%;
+    border-radius: 5px;
+  }
+
+  .ContactRoute label {
+    color: #fb8f67;
+    font-weight: 500;
+  }
+
+  .ContactRoute .contact-container .name-input-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ContactRoute .contact-container .name-input-container input {
+    width: 35%;
+  }
+
+  .ContactRoute .contact-container input {
+    border-radius: 0;
+    border-bottom: 0.15em #eee solid;
+  }
+
+  .ContactRoute .contact-container textarea {
+    border: 0.1em #eee solid;
+  }
+
+  .ContactRoute .contact-container input:focus,
+  .ContactRoute .contact-container textarea:focus {
+    outline: none;
+    border-bottom: 0.15em #fb8f67 solid;
+  }
+
+  .ContactRoute .contact-container textarea:focus {
+    border: 0.1em #fb8f67 solid;
+  }
+
+  .ContactRoute button {
+    background-color: #fb8f67;
+    color: #fff;
+    padding: 0.25em;
+    width: 6em;
+    float: right;
+    font-size: 1em;
+  }
 }
