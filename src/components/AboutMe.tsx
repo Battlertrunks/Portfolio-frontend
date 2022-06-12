@@ -12,7 +12,7 @@ const AboutMe = () => {
     <div className="AboutMe">
       <div>
         <div data-aos="fade-down" className="circle"></div>
-        <h4 className="word-background">Me.</h4>
+        <h2 className="word-background">Me.</h2>
         <h3 data-aos="fade-up">About Me.</h3>
         <div className="order-phone-description">
           <img

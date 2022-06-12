@@ -18,30 +18,35 @@ const MainPortfolioRoute = () => {
       {projects.map((project) => (
         <section>
           <h2 data-aos="fade-up">{project.title}</h2>
-          {project.projectLink ? (
-            <a
-              data-aos="fade-up"
-              href={project.projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Project
-            </a>
-          ) : (
-            <h4>Work In Progress</h4>
-          )}
-          <img
-            data-aos="fade-right"
-            src={project.video}
-            alt={`${project.title} video`}
-          />
-          <p data-aos="fade-left">{project.information}</p>
-          <p data-aos="fade-right">
-            <u>Tools Used:</u> {project.tools}
-          </p>
-          <p data-aos="fade-left">
-            <u>Developers:</u> {project.developers}
-          </p>
+          <div className="content-container">
+            <div className="title-img">
+              <img
+                data-aos="fade-right"
+                src={project.video}
+                alt={`${project.title} video`}
+              />
+              {project.projectLink ? (
+                <a
+                  href={project.projectLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project
+                </a>
+              ) : (
+                <h4 className="in-progress-text">Work In Progress</h4>
+              )}
+            </div>
+            <div>
+              <p data-aos="fade-left">{project.information}</p>
+              <p data-aos="fade-right">
+                <u>Tools Used:</u> {project.tools}
+              </p>
+              <p data-aos="fade-left">
+                <u>Developers:</u> {project.developers}
+              </p>
+            </div>
+          </div>
         </section>
       ))}
     </div>

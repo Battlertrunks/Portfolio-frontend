@@ -1,6 +1,13 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import "./ContactRoute.css";
 
 const ContactRoute = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className="ContactRoute">
       <div className="contact-container">
@@ -8,6 +15,7 @@ const ContactRoute = () => {
           <p className="opening-text">Let's connect</p>
           <h2>Pass Me a Message.</h2>
           <img
+            data-aos="fade-up-right"
             className="mail-icon"
             src="https://firebasestorage.googleapis.com/v0/b/gavinszczesniakportfolio.appspot.com/o/send-mail-orange.png?alt=media&token=2c7b5832-eac2-4bd9-be90-8c08232641e0"
             alt="paper plane message."

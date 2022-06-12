@@ -47,6 +47,10 @@
     text-align: right;
   }
 
+  .AboutMe .word-background {
+    font-size: 20rem;
+  }
+
   .AboutMe h3 {
     margin: 4em 5em;
     margin-top: 0;
@@ -66,5 +70,24 @@
 
   .AboutMe .phone-img {
     width: 20em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .AboutMe {
+    margin: 0 5em;
+  }
+
+  .AboutMe h3 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+
+  .AboutMe .phone-img {
+    width: 28em;
+  }
+
+  .AboutMe .order-phone-description p {
+    font-size: 1.1rem;
   }
 }

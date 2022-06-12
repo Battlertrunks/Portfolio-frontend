@@ -27,6 +27,7 @@
 
 .Header .hamburger-icon {
   width: 25px;
+  cursor: pointer;
 }
 
 .Header .drop-down {
