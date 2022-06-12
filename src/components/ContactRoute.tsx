@@ -1,12 +1,38 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { FormEvent, useEffect, useState } from "react";
+import { sendEmail } from "../services/ProjectInforService";
 import "./ContactRoute.css";
 
 const ContactRoute = () => {
+  const [firstName, setFirstName] = useState<string>("");
+  const [lastName, setLastName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [emailSent, setEmailSent] = useState<boolean | null>(null);
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  const submitHandler = (e: FormEvent) => {
+    e.preventDefault();
+
+    sendEmail({
+      firstName,
+      lastName,
+      email,
+      message,
+    }).then((response) => {
+      setEmailSent(response);
+      console.log(response);
+    });
+
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+  };
 
   return (
     <div className="ContactRoute">
@@ -21,7 +47,7 @@ const ContactRoute = () => {
             alt="paper plane message."
           />
         </div>
-        <form>
+        <form onSubmit={submitHandler}>
           <label htmlFor="name">Name *</label>
           <div className="name-input-container">
             <input
@@ -29,23 +55,40 @@ const ContactRoute = () => {
               name="first-name"
               id="first-name"
               placeholder="First name..."
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
             />
             <input
               type="text"
               name="last-name"
               id="last-name"
               placeholder="Last name...."
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
             />
           </div>
           <label htmlFor="user-email">Email *</label>
           <div>
-            <input type="email" name="user-email" id="user-email" />
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <label htmlFor="message">Message *</label>
           <div>
-            <textarea name="message" id="message"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
           </div>
           <button>Submit</button>
+          {emailSent && <p>Email Successfully Sent!</p>}
+          {emailSent === false && <p>Error: 424, Email was not Sent.</p>}
         </form>
       </div>
     </div>

@@ -10,6 +10,7 @@
 
 .Header .items-container {
   display: flex;
+  position: relative;
   justify-content: space-between;
   padding: 0.75em 2em;
   background-color: #156064;
@@ -61,9 +62,15 @@
     display: contents;
   }
 
+  .Header .middle-options-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .Header .middle-options-container div {
     margin: 0 1.75em;
-    height: 90%;
+    height: 1.5em;
     width: 0.05em;
     background-color: #fff;
   }
@@ -86,5 +93,10 @@
     border: 0.05em #fff solid;
     border-radius: 0.1em;
     padding: 0.25em;
+  }
+
+  .Header .portfolio-link:hover {
+    background-color: #fff;
+    color: #156064;
   }
 }

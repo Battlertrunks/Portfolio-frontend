@@ -25,6 +25,15 @@ const MainPortfolioRoute = () => {
                 src={project.video}
                 alt={`${project.title} video`}
               />
+            </div>
+            <div className="information-container">
+              <p data-aos="fade-left">{project.information}</p>
+              <p data-aos="fade-right">
+                <u>Tools Used:</u> {project.tools}
+              </p>
+              <p data-aos="fade-left">
+                <u>Developers:</u> {project.developers}
+              </p>
               {project.projectLink ? (
                 <a
                   href={project.projectLink}
@@ -36,15 +45,6 @@ const MainPortfolioRoute = () => {
               ) : (
                 <h4 className="in-progress-text">Work In Progress</h4>
               )}
-            </div>
-            <div>
-              <p data-aos="fade-left">{project.information}</p>
-              <p data-aos="fade-right">
-                <u>Tools Used:</u> {project.tools}
-              </p>
-              <p data-aos="fade-left">
-                <u>Developers:</u> {project.developers}
-              </p>
             </div>
           </div>
         </section>
