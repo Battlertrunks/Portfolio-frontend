@@ -27,4 +27,10 @@
 .DropDown button {
   margin-right: 2em;
   margin-bottom: 1em;
+  background-color: transparent;
+  border: none;
+}
+
+.DropDown .close-icon {
+  width: 2.5em;
 }

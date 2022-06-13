@@ -69,6 +69,14 @@
   text-align: center;
 }
 
+.MainPortfolioRoute .error-page {
+  height: 100vh;
+  background-color: #fb8f67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 800px) {
   .MainPortfolioRoute section {
     padding: 0 6em;
