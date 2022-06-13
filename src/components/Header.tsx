@@ -43,7 +43,7 @@ const Header = () => {
         </li>
         <li className="portfolio-link-container">
           <Link className="portfolio-link" to="/portfolio">
-            Portfolio
+            View Portfolio
           </Link>
         </li>
         <li className="dropdown-container">
