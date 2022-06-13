@@ -4,8 +4,12 @@ import "./PageNotFoundRoute.css";
 const PageNotFoundRoute = () => {
   return (
     <div className="PageNotFoundRoute">
-      <h3>404: Page Not Found.</h3>
-      <Link to="/">Return Home.</Link>
+      <div>
+        <h3>404: Page Not Found. Sorry :(</h3>
+        <Link className="link" to="/">
+          Return Home.
+        </Link>
+      </div>
     </div>
   );
 };

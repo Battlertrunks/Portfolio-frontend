@@ -34,7 +34,7 @@ const Header = () => {
         </li>
         <li className="middle-options-container">
           <Link className="link" to="/">
-            About
+            Home
           </Link>
           <div className="divider" />
           <Link className="link" to="/contact">
@@ -42,7 +42,7 @@ const Header = () => {
           </Link>
         </li>
         <li className="portfolio-link-container">
-          <Link className="portfolio-link link" to="/portfolio">
+          <Link className="portfolio-link" to="/portfolio">
             Portfolio
           </Link>
         </li>

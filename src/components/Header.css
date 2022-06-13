@@ -53,8 +53,28 @@
     display: none;
   }
 
-  .Header .link:hover {
+  .Header .link {
+    display: inline-block;
+    position: relative;
     cursor: pointer;
+  }
+
+  .Header .link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .Header .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
   .Header .portfolio-link-container,
@@ -93,6 +113,8 @@
     border: 0.05em #fff solid;
     border-radius: 0.1em;
     padding: 0.25em;
+    transition: background-color 0.15s ease;
+    cursor: pointer;
   }
 
   .Header .portfolio-link:hover {

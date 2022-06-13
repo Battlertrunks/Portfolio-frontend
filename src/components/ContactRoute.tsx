@@ -57,6 +57,7 @@ const ContactRoute = () => {
               placeholder="First name..."
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
+              required
             />
             <input
               type="text"
@@ -65,6 +66,7 @@ const ContactRoute = () => {
               placeholder="Last name...."
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
+              required
             />
           </div>
           <label htmlFor="user-email">Email *</label>
@@ -75,6 +77,7 @@ const ContactRoute = () => {
               id="user-email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
           <label htmlFor="message">Message *</label>
@@ -84,6 +87,7 @@ const ContactRoute = () => {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             ></textarea>
           </div>
           <button>Submit</button>

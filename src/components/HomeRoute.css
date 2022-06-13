@@ -1,7 +1,6 @@
 .HomeRoute {
   background-color: #fb8f67;
   height: 100%;
-  padding-bottom: 8em;
   overflow: hidden;
 }
 
@@ -44,17 +43,6 @@
   position: absolute;
 }
 
-.HomeRoute .circle-3 {
-  height: 50em;
-  width: 50em;
-  position: absolute;
-  left: 50%;
-  top: 55em;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background-color: #ff9d79;
-}
-
 .HomeRoute .opening-container h2 {
   margin-bottom: 12em;
 }
@@ -82,6 +70,10 @@
 .HomeRoute .skills-container {
   height: 100%;
   position: relative;
+  background-color: #ff9d79;
+  padding-top: 5em;
+  border-top-left-radius: 5em;
+  border-top-right-radius: 5em;
 }
 
 .HomeRoute .skills-heading,
@@ -106,7 +98,7 @@
 }
 
 .HomeRoute .learning-icons {
-  margin-bottom: 15em;
+  padding-bottom: 5em;
 }
 
 @media only screen and (min-width: 865px) {
@@ -116,6 +108,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #17757a;
+  }
+
+  .HomeRoute .circle-3 {
+    top: 55em;
   }
 
   .HomeRoute .opening-container h2 {
@@ -143,10 +139,5 @@
 
   .HomeRoute .software-icons li {
     margin: 1.5em 5em;
-  }
-
-  .HomeRoute .circle-3 {
-    height: 120em;
-    width: 140em;
   }
 }
