@@ -61,6 +61,7 @@
 
 .ContactRoute textarea {
   height: 10em;
+  resize: none;
 }
 
 .ContactRoute button {
