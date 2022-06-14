@@ -83,6 +83,10 @@
 }
 
 @media only screen and (min-width: 865px) {
+  .ContactRoute {
+    height: 100vh;
+  }
+
   .ContactRoute .contact-container {
     display: flex;
     flex-direction: row;
