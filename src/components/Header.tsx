@@ -4,24 +4,32 @@ import DropDown from "./DropDown";
 import "./Header.css";
 
 const Header = () => {
+  // Sets the dropdown to be closed or open.
   const [openDropDown, setOpenDropDown] = useState<boolean>(false);
+  // Used to detect if the user is scrolling vertically.
   const scrollDetection: number = window.scrollY;
+  // Gets the url
   const urlChange = useLocation();
 
   useEffect(() => {
+    // When user scrolls.
     window.addEventListener("scroll", (e) => closeDropDown());
 
+    // Ends/removes event listener
     return () => {
       window.removeEventListener("scroll", (e) => closeDropDown());
     };
-  }, [scrollDetection]);
+  }, [scrollDetection]); // Runs scroll detection when verticle scroll changes and once on load.
 
   useEffect(() => {
+    // When the user changes path name, puts screen to the top smoothly.
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [urlChange.pathname]);
 
+  // Adds class name to for the drop down depending on boolean.
   const dropDown: string = !openDropDown ? "drop-not-visible" : "";
 
+  // Sets drop down to close/false.
   const closeDropDown = () => setOpenDropDown(false);
 
   return (

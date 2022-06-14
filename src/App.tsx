@@ -8,6 +8,7 @@ import MainPortfolioRoute from "./components/MainPortfolioRoute";
 import PageNotFoundRoute from "./components/PageNotFoundRoute";
 
 function App() {
+  // Using React Router to navigate pages.
   return (
     <main className="App">
       <Router>

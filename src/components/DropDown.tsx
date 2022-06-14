@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./DropDown.css";
 
+// Inserting prop for drop down effect on mobile version.
 interface Props {
   onDropDown: () => void;
 }

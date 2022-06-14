@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const AboutMe = () => {
+  // Sets up animation duration on scroll.
   useEffect(() => {
     AboutAos.init({ duration: 2000 });
   }, []);

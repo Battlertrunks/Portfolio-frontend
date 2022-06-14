@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./PageNotFoundRoute.css";
 
 const PageNotFoundRoute = () => {
+  // When the user puts in a non-existent path.
   return (
     <div className="PageNotFoundRoute">
       <div>

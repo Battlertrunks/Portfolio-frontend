@@ -5,29 +5,35 @@ import { sendEmail } from "../services/ProjectInforService";
 import "./ContactRoute.css";
 
 const ContactRoute = () => {
+  // Setting up states that will be used to get data from form.
   const [firstName, setFirstName] = useState<string>("");
   const [lastName, setLastName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [emailSent, setEmailSent] = useState<boolean | null>(null);
 
+  // Setting up duration of animation on scroll
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  // Runs when the form is submitted.
   const submitHandler = (e: FormEvent) => {
+    // Prevents reload.
     e.preventDefault();
 
+    // Sending a post request to send a message to designated email.
     sendEmail({
       firstName,
       lastName,
       email,
       message,
     }).then((response) => {
+      // Notifies the user if the email sucessfully sent or there was an error.
       setEmailSent(response);
-      console.log(response);
     });
 
+    // Resets the states.
     setFirstName("");
     setLastName("");
     setEmail("");

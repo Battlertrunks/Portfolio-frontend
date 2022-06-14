@@ -7,9 +7,12 @@ import "./MainPortfolioRoute.css";
 import LoadingRoute from "./LoadingRoute";
 
 const MainPortfolioRoute = () => {
+  // State array that retrieves project data.
   const [projects, setProjects] = useState<ProjectInfo[]>([]);
+  // sets if there is an error when retrieving project data.
   const [retrieveError, setRetrieveError] = useState<boolean>(false);
 
+  // Runs once, retrieves request of project data. If error, setRetrieveError to true. And sets animation duration on scroll.
   useEffect(() => {
     retrieveProjects()
       .then((response) => setProjects(response))
@@ -30,7 +33,7 @@ const MainPortfolioRoute = () => {
               <div className="title-img">
                 <img
                   data-aos="fade-right"
-                  src={project.video}
+                  src={project.image}
                   alt={`${project.title} video`}
                 />
               </div>
@@ -57,11 +60,12 @@ const MainPortfolioRoute = () => {
             </div>
           </section>
         ))
-      ) : retrieveError ? (
+      ) : retrieveError ? ( // If error from retrieving data, notify uers(s)
         <div className="error-page">
           <h2>Error, 400 - Bad Request</h2>
         </div>
       ) : (
+        // Displays when the page is loading the data.
         <LoadingRoute />
       )}
     </div>

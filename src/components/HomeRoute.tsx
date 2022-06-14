@@ -14,6 +14,7 @@ import "./HomeRoute.css";
 import { useEffect } from "react";
 
 const HomeRoute = () => {
+  // Sets the duration of the animation on scroll.
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
